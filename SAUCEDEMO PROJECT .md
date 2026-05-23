@@ -58,12 +58,3 @@ GitHub: nikitad-QA
 
 
 
-
-
-
-
-
-
-
-
-

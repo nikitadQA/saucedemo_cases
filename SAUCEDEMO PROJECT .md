@@ -53,7 +53,7 @@ Actual:No validation — checkout continues without error.
 ![TC_003_09 Screenshot](screenshots/TC_003_09_zipcode_chars_fail.png)
 
 Test Coverage :
-I have tested modules Login, Product add to cart and Checkout with test scenario id TC_001, TC_002, TC_003 respestively. I have design and executed total 26 number of test cases for all three modules in which for login have 9, product add to cart have 8 and checkout have 9  test cases respectively.
+I have tested modules Login, Product add to cart and Checkout with test scenario id TC_001, TC_002, TC_003 respectively. I have design and executed total 26 number of test cases for all three modules in which for login have 9, product add to cart have 8 and checkout have 9  test cases respectively.
 
 Tools Used :
 1. Microsoft Excel(test case documentation)

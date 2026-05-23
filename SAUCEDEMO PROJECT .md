@@ -13,13 +13,6 @@ Testing Type :
 3. Negative Testing
 4. Boundary / Edge Case Testing
 
-Test Coverage :
-Module                        Test Scenario ID     No. of Test Cases   
-Login                                TC_001                 9
-Product Add to Cart                  TC_002                 8
-Checkout                             TC_003                 9
-Total                                                       26
-
 Test Case Structure :
 Each test case includes the following fields:
 1. SR No. – Serial number
@@ -39,8 +32,32 @@ Bugs Found :
 Description:Application does not accept uppercase username (e.g. `STANDARD_USER`), showing an error even though it is the correct username.  
 Expected:Login should succeed (case-insensitive).  
 Actual:Error message — "Username and password do not match any user in this service."
-
 ![TC_001_02 Screenshot](screenshots/TC_001_02_uppercase_login_fail.png)
+
+2. TC_003_06 – Special characters accepted in name fields at checkout
+Description: Entering special characters (e.g. `nikk@12`) in the First Name field during checkout does not show any validation error. The checkout process continues as normal.  
+Expected:An error message should appear for invalid characters.  
+Actual:No error shown — checkout continues.
+![TC_003_06 Screenshot](screenshots/TC_003_06_special_chars_fail.png)
+
+3.TC_003_07 – Numeric values accepted in name fields at checkout
+Description:Entering numbers (e.g. `12234544`) in the First Name field does not trigger any validation. The form accepts it and proceeds.  
+Expected:An error message should appear for invalid numeric input.  
+Actual:No error shown — checkout continues.
+![TC_003_07 Screenshot](screenshots/TC_003_07_numeric_name_fail.png)
+
+4. TC_003_09 – Zip code field accepts alphabetic characters
+Description:The postal/zip code field should only accept numeric values, but entering alphabetic characters does not trigger any error and the checkout continues.  
+Expected:Error message shown for non-numeric zip code input.  
+Actual:No validation — checkout continues without error.
+![TC_003_09 Screenshot](screenshots/TC_003_09_zipcode_chars_fail.png)
+
+Test Coverage :
+Module                        Test Scenario ID     No. of Test Cases   
+Login                                TC_001                 9
+Product Add to Cart                  TC_002                 8
+Checkout                             TC_003                 9
+Total                                                       26
 
 Tools Used :
 1. Microsoft Excel(test case documentation)

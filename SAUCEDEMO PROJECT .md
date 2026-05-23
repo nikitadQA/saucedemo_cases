@@ -40,7 +40,7 @@ Expected:An error message should appear for invalid characters.
 Actual:No error shown — checkout continues.
 ![TC_003_06 Screenshot](screenshots/TC_003_06_special_chars_fail.png)
 
-3.TC_003_07 – Numeric values accepted in name fields at checkout
+3. TC_003_07 – Numeric values accepted in name fields at checkout
 Description:Entering numbers (e.g. `12234544`) in the First Name field does not trigger any validation. The form accepts it and proceeds.  
 Expected:An error message should appear for invalid numeric input.  
 Actual:No error shown — checkout continues.

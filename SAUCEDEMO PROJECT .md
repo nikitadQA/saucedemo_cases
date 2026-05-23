@@ -35,11 +35,12 @@ Each test case includes the following fields:
 11. Status – Pass / Fail
 
 Bugs Found :
-Test Case ID                           Bug Description
-TC_001_02                       Login fails with uppercase username (case sensitivity issue)
-TC_003_06                       Special characters accepted in name fields without error message
-TC_003_07                       Numeric values accepted in name fields without error message
-TC_003_09                       Zip code field accepts alphabetic characters without error message
+1. TC_001_02 – Login fails with uppercase username
+Description:Application does not accept uppercase username (e.g. `STANDARD_USER`), showing an error even though it is the correct username.  
+Expected:Login should succeed (case-insensitive).  
+Actual:Error message — "Username and password do not match any user in this service."
+
+![TC_001_02 Screenshot](screenshots/TC_001_02_uppercase_login_fail.png)
 
 Tools Used :
 1. Microsoft Excel(test case documentation)

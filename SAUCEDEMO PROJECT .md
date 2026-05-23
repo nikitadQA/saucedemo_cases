@@ -1,6 +1,6 @@
 # saucedemo_cases :- Manual test cases
 
-This project contains manual test cases written for [saucedemo]([(https://www.saucedemo.com/)), a real-world oral care e-commerce website. The purpose of this project is to practice manual testing on a live production website, covering sign-up functionality and product search.
+This project contains manual test cases written for SauceDemo, an e-commerce demo website. The purpose of this project is to practice manual testing across key user flows like login, cart management, and checkout.
 
 Application Under Test :
 Field Details Website :- https://www.saucedemo.com/
